@@ -1,0 +1,29 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Form객체</title>
+    <script type="text/javascript">
+        <!--
+        function jump(elem) {
+            var isbn = elem.book.value;
+            console.log(isbn);
+
+            // location.href = 'http://www.wings.msn.to/index.php/-/A-03/' + isbn;
+            //location.replace('http://www.wings.msn.to/index.php/-/A-03/' + isbn);
+        }
+        //-->
+    </script>
+</head>
+<body>
+<form name="fm">
+    <select name="book" onchange="jump(fm)">
+        <option value="">---서적명을 선택해 주세요---</option>
+        <option value="978-4-7741-4223-4">Apache포켓 레퍼런스</option>
+        <option value="978-4-7741-4076-6">3단계로 확실히 배우는 MySQL입문</option>
+        <option value="978-4-8222-9423-6">프로그램을 만들자！ Microsoft Visual C++ 2010입문</option>
+        <option value="978-4-8443-2865-0">Perl 프레임워크 Catalyst완전입문</option>
+        <option value="978-4-7981-2151-2">독자 학습 PHP 제2판</option>
+    </select>
+</form>
+</body>
+</html>

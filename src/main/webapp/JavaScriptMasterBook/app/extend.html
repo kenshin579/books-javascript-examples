@@ -1,0 +1,33 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>코어기능</title>
+</head>
+<body>
+<form>
+    <input type="text" value="안녕, 아가야!" size="20"/>
+    <input type="text" value="jQuery의 기본" size="20"/>
+</form>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+    <!--
+    $.fn.extend({
+        clearValue: function () {
+            return this.each(function () {
+                this.value = '';
+            });
+        }
+    });
+    $(':text').clearValue();
+
+    $.extend({
+        triangle: function (base, height) {
+            return base * height / 2;
+        }
+    });
+    document.writeln($.triangle(10, 2));
+    // -->
+</script>
+</body>
+</html>

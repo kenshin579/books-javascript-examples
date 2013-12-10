@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <script type="text/javascript">
+
+        function iFrameOn() {
+
+            rte.document.designMode = 'On';
+
+        }
+
+        function iBold() {
+
+            rte.document.execCommand('bold', false, null);
+
+        }
+
+        function iUnderline() {
+
+            rte.document.execCommand('underline', false, null);
+
+        }
+
+        function iItalic() {
+
+            rte.document.execCommand('italic', false, null);
+
+        }
+
+        function iFontSize() {
+
+            var size = prompt('Enter a size 1 - 7', '');
+
+            rte.document.execCommand('fontSize', false, size);
+
+        }
+
+        function readFrame() {
+
+            alert(window.frames['rte'].document.body.innerHTML);
+
+        }
+
+    </script>
+
+</head>
+
+<body onLoad="iFrameOn();">
+
+<input type="button" onclick="iBold()" value="B">
+
+<input type="button" onclick="iUnderline()" value="U">
+
+<input type="button" onclick="iItalic()" value="I">
+
+<input type="button" onClick="iFontSize()" value="Font Size">
+
+<br/>
+
+<iframe name="rte" id="rte" style="border:#000000 1px solid;"></iframe>
+
+<br/>
+
+<input type="button" onclick="readFrame()" value="Show HTML Output">
+
+</body>
+
+</html>

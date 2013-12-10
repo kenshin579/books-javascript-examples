@@ -1,0 +1,29 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Ajax</title>
+</head>
+<body>
+<form>
+    이름：<input type="text" name="name"/>
+    <input type="button" id="send" value="송신"/>
+</form>
+<div id="result"></div>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+    <!--
+    $(':button').ajaxStart(function () {
+        $('#result').html('통신중...');
+    });
+
+    $('#send').click(function () {
+        $.get('ajax.php', $('form').serializeArray(),
+                function (data) {
+                    $('#result').html(data);
+                });
+    });
+    //-->
+</script>
+</body>
+</html>

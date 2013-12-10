@@ -1,0 +1,27 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>요소의 조작</title>
+</head>
+<body>
+<input type="button" id="btn" value="복원!"/>
+
+<div>클릭하면 사라집니다...</div>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+    <!--
+    var e;
+
+    $('div').click(function () {
+        e = $(this).detach();
+    });
+
+    $('#btn').click(function () {
+        $('body').append(e);
+        e = null;
+    });
+    //-->
+</script>
+</body>
+</html>

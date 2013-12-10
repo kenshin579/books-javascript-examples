@@ -1,0 +1,33 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>노드 워킹</title>
+    <script type="text/javascript">
+        <!--
+        window.onload = function () {
+            var result = [];
+            var s = document.getElementById('food');
+            var opts = s.childNodes;
+            for (var i = 0; i < opts.length; i++) {
+                var opt = opts.item(i);
+                if (opt.nodeType == 1) {
+                    result.push(opts.item(i).value);
+                }
+            }
+            window.alert(result.join(','));
+        }
+        //-->
+    </script>
+</head>
+<body>
+<form name="fm">
+    가장 먹고 싶은 음식은？：
+    <select id="food" name="food">
+        <option value="라면">라면</option>
+        <option value="만두">만두</option>
+        <option value="불고기">불고기</option>
+    </select>
+    <input type="submit" value="송신"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>this키워드의 함정</title>
+</head>
+<body>
+<div id="result">클릭！클릭！！</div>
+...중략...
+<script type="text/javascript">
+    <!--
+    function Test(name) {
+        this.name = name;
+        var result = document.getElementById('result');
+        var self = this;
+        result.onclick = function () {
+            window.alert('안녕하세요. ' + this.name + '씨！');
+        }
+        /*
+         var self = this;
+         result.onclick = function() {
+         window.alert('안녕하세요. ' + self.name + '씨！');
+         }
+         */
+    }
+    var t = new Test('야마다');
+    // -->
+</script>
+</body>
+</html>

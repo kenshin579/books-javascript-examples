@@ -1,0 +1,26 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>이벤트</title>
+</head>
+<body>
+<form>
+    <input type="submit" value="송신"/>
+
+    <p id="c">클릭해주세요.</p>
+</form>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+    <!--
+    $('form').submit(
+            function (e, param1, param2) {
+                window.alert(param1 + param2);
+            });
+    $('#c').click(function () {
+        $('form').trigger('submit', ['이름없는', '시골무사']);
+    });
+    // -->
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Form객체</title>
+    <script type="text/javascript">
+        <!--
+        function process(f) {
+            var fmt = f.fmt;
+            for (var i = 0; i < fmt.length; i++) {
+                fmt[i].disabled = !f.need.checked;
+            }
+        }
+        //-->
+    </script>
+</head>
+<body>
+<form name="fm">
+    <label>
+        메일 뉴스 송신을 희망：
+        <input type="checkbox" name="need" value="1"
+               checked="checked" onclick="process(this.form)"/>
+    </label>
+    <br/>
+    <label><input type="radio" name="fmt" value="plain"/>텍스트형식</label>
+    <label><input type="radio" name="fmt" value="html"/>HTML형식</label>
+</form>
+</body>
+</html>

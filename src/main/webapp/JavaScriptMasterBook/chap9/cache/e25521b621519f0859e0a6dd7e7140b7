@@ -1,0 +1,87 @@
+O:9:"MagpieRSS":21:{s:6:"parser";i:0;s:12:"current_item";a:0:{}s:5:"items";a:15:{i:0;a:7:{s:5:"about";s:45:"http://www.wings.msn.to/out.php?c=rss&id=1673";s:5:"title";s:93:"「インプレス ThinkIT（CSS3で視認性の高いテーブルを作る）」記事掲載";s:4:"link";s:51:"
+			http://www.wings.msn.to/out.php?c=rss&id=1673		";s:11:"description";s:270:"
+			今回はCSS3で追加された:nth-child()擬似クラスを使って、1行ごとに背景色を変えて表示するゼブラテーブルや、土曜・日曜・祝祭日に平日と異なるスタイルを適用させたカレンダーなどを作成します。";s:8:"category";s:30:"
+			雑誌・サイト記事		";s:2:"dc";a:1:{s:4:"date";s:25:"2011-08-04T00:00:00+09:00";}s:7:"summary";s:270:"
+			今回はCSS3で追加された:nth-child()擬似クラスを使って、1行ごとに背景色を変えて表示するゼブラテーブルや、土曜・日曜・祝祭日に平日と異なるスタイルを適用させたカレンダーなどを作成します。";}i:1;a:7:{s:5:"about";s:45:"http://www.wings.msn.to/out.php?c=rss&id=1671";s:5:"title";s:89:"「翔泳社 CodeZine（JSF2の画面でAjaxの非同期通信を作る）」記事掲載";s:4:"link";s:51:"
+			http://www.wings.msn.to/out.php?c=rss&id=1671		";s:11:"description";s:169:"
+			Java Enterprise Edition 6のプレゼンテーションの基本となるJSF（JavaServer Faces）の送信機能と、Ajaxの扱い方について紹介します。";s:8:"category";s:30:"
+			雑誌・サイト記事		";s:2:"dc";a:1:{s:4:"date";s:25:"2011-08-03T00:00:00+09:00";}s:7:"summary";s:169:"
+			Java Enterprise Edition 6のプレゼンテーションの基本となるJSF（JavaServer Faces）の送信機能と、Ajaxの扱い方について紹介します。";}i:2;a:7:{s:5:"about";s:45:"http://www.wings.msn.to/out.php?c=rss&id=1672";s:5:"title";s:106:"「＠IT ASP.NETの状態管理：アプリケーション変数／キャッシュ機能　」記事掲載";s:4:"link";s:51:"
+			http://www.wings.msn.to/out.php?c=rss&id=1672		";s:11:"description";s:250:"
+			書籍からの転載です。
+アプリケーション・ユーザー間でデータを共有できるアプリケーション変数を解説します。また、ASP.NETが提供する3種類のキャッシュ技術についてまとめます。";s:8:"category";s:30:"
+			雑誌・サイト記事		";s:2:"dc";a:1:{s:4:"date";s:25:"2011-08-03T00:00:00+09:00";}s:7:"summary";s:250:"
+			書籍からの転載です。
+アプリケーション・ユーザー間でデータを共有できるアプリケーション変数を解説します。また、ASP.NETが提供する3種類のキャッシュ技術についてまとめます。";}i:3;a:7:{s:5:"about";s:45:"http://www.wings.msn.to/out.php?c=rss&id=1670";s:5:"title";s:86:"「インプレス ThinkIT（PowerShellを使用したAzureの管理）」記事掲載";s:4:"link";s:51:"
+			http://www.wings.msn.to/out.php?c=rss&id=1670		";s:11:"description";s:143:"
+			今回はポータルサイトではなく、PowerShellを使用してマネジメントが行えるツールを紹介していきます。";s:8:"category";s:30:"
+			雑誌・サイト記事		";s:2:"dc";a:1:{s:4:"date";s:25:"2011-07-27T00:00:00+09:00";}s:7:"summary";s:143:"
+			今回はポータルサイトではなく、PowerShellを使用してマネジメントが行えるツールを紹介していきます。";}i:4;a:7:{s:5:"about";s:45:"http://www.wings.msn.to/out.php?c=rss&id=1669";s:5:"title";s:128:"「＠IT ASP.NET MVC入門（第5回　新しいビュー・エンジン「Razor」の基本を理解しよう）」記事掲載";s:4:"link";s:51:"
+			http://www.wings.msn.to/out.php?c=rss&id=1669		";s:11:"description";s:191:"
+			ASP.NET MVC 3で新しく導入されたRazorの基本文法とヘルパー関数を解説します。HTML画面をかつてないほどシンプルにプログラミングできます。";s:8:"category";s:30:"
+			雑誌・サイト記事		";s:2:"dc";a:1:{s:4:"date";s:25:"2011-07-25T00:00:00+09:00";}s:7:"summary";s:191:"
+			ASP.NET MVC 3で新しく導入されたRazorの基本文法とヘルパー関数を解説します。HTML画面をかつてないほどシンプルにプログラミングできます。";}i:5;a:7:{s:5:"about";s:45:"http://www.wings.msn.to/out.php?c=rss&id=1668";s:5:"title";s:139:"「日経BP社 日経ソフトウエア2011年9月号（特別付録 .NETプログラミングまるごと学習ブック）」記事掲載";s:4:"link";s:51:"
+			http://www.wings.msn.to/out.php?c=rss&id=1668		";s:11:"description";s:183:"
+			特別付録 .NETプログラミングまるごと学習ブック
+これから始める人、改めてしくみを理解したい人のための.NET Framework入門記事です。";s:8:"category";s:30:"
+			雑誌・サイト記事		";s:2:"dc";a:1:{s:4:"date";s:25:"2011-07-24T00:00:00+09:00";}s:7:"summary";s:183:"
+			特別付録 .NETプログラミングまるごと学習ブック
+これから始める人、改めてしくみを理解したい人のための.NET Framework入門記事です。";}i:6;a:7:{s:5:"about";s:45:"http://www.wings.msn.to/out.php?c=rss&id=1665";s:5:"title";s:109:"「＠IT ASP.NETの状態管理：ビューステート／クッキー／セッション情報」記事掲載";s:4:"link";s:51:"
+			http://www.wings.msn.to/out.php?c=rss&id=1665		";s:11:"description";s:277:"
+			書籍からの転載です。
+複数のページ間／リクエスト間で情報を維持するASP.NETの状態管理について解説します。その主要機能の中から、ビューステート／クッキー／セッション情報の3つをとりあげます。";s:8:"category";s:30:"
+			雑誌・サイト記事		";s:2:"dc";a:1:{s:4:"date";s:25:"2011-07-20T00:00:00+09:00";}s:7:"summary";s:277:"
+			書籍からの転載です。
+複数のページ間／リクエスト間で情報を維持するASP.NETの状態管理について解説します。その主要機能の中から、ビューステート／クッキー／セッション情報の3つをとりあげます。";}i:7;a:7:{s:5:"about";s:45:"http://www.wings.msn.to/out.php?c=rss&id=1666";s:5:"title";s:117:"「翔泳社 CodeZine（Business Connectivity Services（BCS）を使用したSQL Azureとの連携）」記事掲載";s:4:"link";s:51:"
+			http://www.wings.msn.to/out.php?c=rss&id=1666		";s:11:"description";s:142:"
+			Business Connectivity Services（BCS）を使用してSharePoint 2010と外部データを連携する方法について解説します。";s:8:"category";s:30:"
+			雑誌・サイト記事		";s:2:"dc";a:1:{s:4:"date";s:25:"2011-07-20T00:00:00+09:00";}s:7:"summary";s:142:"
+			Business Connectivity Services（BCS）を使用してSharePoint 2010と外部データを連携する方法について解説します。";}i:8;a:7:{s:5:"about";s:45:"http://www.wings.msn.to/out.php?c=rss&id=1667";s:5:"title";s:138:"「毎日コミュニケーションズ Excel VBAでWebサービス - Excelで書籍情報を検索・取得してみよう」記事掲載";s:4:"link";s:51:"
+			http://www.wings.msn.to/out.php?c=rss&id=1667		";s:11:"description";s:302:"
+			今回は、「楽天Webサービス」の書籍APIを利用して、書籍情報を検索して取得する方法を紹介します。こういった検索はブラウザでもできますが、Web APIを利用すると、もっときめ細かい、自分好みの検索が可能になります。";s:8:"category";s:30:"
+			雑誌・サイト記事		";s:2:"dc";a:1:{s:4:"date";s:25:"2011-07-20T00:00:00+09:00";}s:7:"summary";s:302:"
+			今回は、「楽天Webサービス」の書籍APIを利用して、書籍情報を検索して取得する方法を紹介します。こういった検索はブラウザでもできますが、Web APIを利用すると、もっときめ細かい、自分好みの検索が可能になります。";}i:9;a:7:{s:5:"about";s:45:"http://www.wings.msn.to/out.php?c=rss&id=1664";s:5:"title";s:115:"「翔泳社 CodeZine（Androidアプリにおけるユーザインタフェースの基本処理）」記事掲載";s:4:"link";s:51:"
+			http://www.wings.msn.to/out.php?c=rss&id=1664		";s:11:"description";s:233:"
+			ビューを用いたAndroidの画面処理や、ボタンのイベント処理など、本連載を読み進めていく上で必要となる、ユーザインタフェースの前提知識について解説していきます。";s:8:"category";s:30:"
+			雑誌・サイト記事		";s:2:"dc";a:1:{s:4:"date";s:25:"2011-07-15T00:00:00+09:00";}s:7:"summary";s:233:"
+			ビューを用いたAndroidの画面処理や、ボタンのイベント処理など、本連載を読み進めていく上で必要となる、ユーザインタフェースの前提知識について解説していきます。";}i:10;a:7:{s:5:"about";s:45:"http://www.wings.msn.to/out.php?c=rss&id=1662";s:5:"title";s:94:"「翔泳社 CodeZine（Visual Studio単体テストの前準備と後始末）」記事掲載";s:4:"link";s:51:"
+			http://www.wings.msn.to/out.php?c=rss&id=1662		";s:11:"description";s:130:"
+			今回は単体テストの前準備と後片付けをシンプルに記述して再利用する方法を覚えましょう。";s:8:"category";s:30:"
+			雑誌・サイト記事		";s:2:"dc";a:1:{s:4:"date";s:25:"2011-07-14T00:00:00+09:00";}s:7:"summary";s:130:"
+			今回は単体テストの前準備と後片付けをシンプルに記述して再利用する方法を覚えましょう。";}i:11;a:7:{s:5:"about";s:45:"http://www.wings.msn.to/out.php?c=rss&id=1663";s:5:"title";s:125:"「＠IT 初めてのHTML5開発（位置情報をブラウザで活用！ Geolocationを使いこなそう）」記事掲載";s:4:"link";s:51:"
+			http://www.wings.msn.to/out.php?c=rss&id=1663		";s:11:"description";s:201:"
+			スマホWeb開発で活用されている人気機能順に各HTML5機能の使い方を解説する連載がスタートしました。初回は断トツ人気のGeolocation APIを扱います。";s:8:"category";s:30:"
+			雑誌・サイト記事		";s:2:"dc";a:1:{s:4:"date";s:25:"2011-07-14T00:00:00+09:00";}s:7:"summary";s:201:"
+			スマホWeb開発で活用されている人気機能順に各HTML5機能の使い方を解説する連載がスタートしました。初回は断トツ人気のGeolocation APIを扱います。";}i:12;a:7:{s:5:"about";s:45:"http://www.wings.msn.to/out.php?c=rss&id=1661";s:5:"title";s:110:"「＠IT Entity Framework 4.1入門（EF 4.1の規約とデータベースの初期化方法）」記事掲載";s:4:"link";s:51:"
+			http://www.wings.msn.to/out.php?c=rss&id=1661		";s:11:"description";s:202:"
+			コード・ファーストの規約を中心に、細かなカスタマイズ方法を解説します。またデータベースの自動生成や初期データの投入方法も紹介します。";s:8:"category";s:30:"
+			雑誌・サイト記事		";s:2:"dc";a:1:{s:4:"date";s:25:"2011-07-13T00:00:00+09:00";}s:7:"summary";s:202:"
+			コード・ファーストの規約を中心に、細かなカスタマイズ方法を解説します。またデータベースの自動生成や初期データの投入方法も紹介します。";}i:13;a:7:{s:5:"about";s:45:"http://www.wings.msn.to/out.php?c=rss&id=1660";s:5:"title";s:120:"「翔泳社 CodeZine（jQueryを利用した軽量・高機能なクライアントサイド実装！）」記事掲載";s:4:"link";s:51:"
+			http://www.wings.msn.to/out.php?c=rss&id=1660		";s:11:"description";s:225:"
+			NetAdvantage for jQueryを利用した高機能で軽量なクライアントサイド実装について解説します。データアクセステクノロジから、高機能なグリッドについて紹介します。";s:8:"category";s:30:"
+			雑誌・サイト記事		";s:2:"dc";a:1:{s:4:"date";s:25:"2011-07-12T00:00:00+09:00";}s:7:"summary";s:225:"
+			NetAdvantage for jQueryを利用した高機能で軽量なクライアントサイド実装について解説します。データアクセステクノロジから、高機能なグリッドについて紹介します。";}i:14;a:7:{s:5:"about";s:45:"http://www.wings.msn.to/out.php?c=rss&id=1658";s:5:"title";s:62:"「＠IT ASP.NETを理解する3つの仕組み」記事掲載";s:4:"link";s:51:"
+			http://www.wings.msn.to/out.php?c=rss&id=1658		";s:11:"description";s:244:"
+			書籍からの転載です。
+ASP.NET固有の考え方を理解するときにキモとなるポイント。サーバ・コントロール、イベントドリブン・モデル、ビューステートの3つについて解説します。";s:8:"category";s:30:"
+			雑誌・サイト記事		";s:2:"dc";a:1:{s:4:"date";s:25:"2011-07-06T00:00:00+09:00";}s:7:"summary";s:244:"
+			書籍からの転載です。
+ASP.NET固有の考え方を理解するときにキモとなるポイント。サーバ・コントロール、イベントドリブン・モデル、ビューステートの3つについて解説します。";}}s:7:"channel";a:6:{s:5:"title";s:44:"サーバサイド技術の学び舎 - WINGS";s:11:"description";s:107:"サーバサイド技術（JSP/サーブレット、ASP.NET、PHP、XML）に関する最新情報を提供";s:4:"link";s:24:"http://www.wings.msn.to/";s:5:"items";s:7:"
+			
+		";s:9:"items_seq";s:34:"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			";s:7:"tagline";s:107:"サーバサイド技術（JSP/サーブレット、ASP.NET、PHP、XML）に関する最新情報を提供";}s:9:"textinput";a:0:{}s:5:"image";a:3:{s:5:"title";s:44:"サーバサイド技術の学び舎 - WINGS";s:3:"url";s:39:"http://www.wings.msn.to/image/wings.jpg";s:4:"link";s:24:"http://www.wings.msn.to/";}s:9:"feed_type";s:3:"RSS";s:12:"feed_version";s:3:"1.0";s:8:"encoding";s:5:"UTF-8";s:16:"_source_encoding";s:0:"";s:5:"ERROR";s:0:"";s:7:"WARNING";s:0:"";s:19:"_CONTENT_CONSTRUCTS";a:6:{i:0;s:7:"content";i:1;s:7:"summary";i:2;s:4:"info";i:3;s:5:"title";i:4;s:7:"tagline";i:5;s:9:"copyright";}s:16:"_KNOWN_ENCODINGS";a:3:{i:0;s:5:"UTF-8";i:1;s:8:"US-ASCII";i:2;s:10:"ISO-8859-1";}s:5:"stack";a:0:{}s:9:"inchannel";b:0;s:6:"initem";b:0;s:9:"incontent";b:0;s:11:"intextinput";b:0;s:7:"inimage";b:0;s:17:"current_namespace";b:0;}

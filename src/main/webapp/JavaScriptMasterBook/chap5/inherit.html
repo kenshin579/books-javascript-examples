@@ -1,0 +1,48 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>클래스와 비슷한 계승</title>
+</head>
+<body>
+<pre>
+<script type="text/javascript">
+    <!--
+    function initializeBase(derive, base, baseArgs) {
+        base.apply(derive, baseArgs);
+
+        for (prop in base.prototype) {
+            var proto = derive.constructor.prototype;
+            document.writeln("function name: " + prop);
+            document.writeln("proto: " + typeof proto);
+            if (!proto[prop]) {
+                proto[prop] = base.prototype[prop];
+            }
+        }
+    }
+
+    var Member = function (firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    };
+
+    Member.prototype.getName = function () {
+        return this.lastName + ' ' + this.firstName;
+    };
+
+    var SpecialMember = function (firstName, lastName, role) {
+        initializeBase(this, Member, [firstName, lastName]);
+        this.role = role;
+    }
+
+    SpecialMember.prototype.isAdministrator = function () {
+        return (this.role == 'Administrator');
+    };
+
+    var mem = new SpecialMember('요시히로', '야마다', 'Administrator');
+    document.writeln('이름：' + mem.getName());
+    document.writeln('관리자：' + mem.isAdministrator());
+    //-->
+</script>
+</pre>
+</body>
+</html>

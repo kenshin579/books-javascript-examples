@@ -1,0 +1,73 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Yahoo! 블로그 검색Web서비스</title>
+    <script type="text/javascript">
+        <!--
+        function getXHR() {
+            var req;
+            try {
+                req = new XMLHttpRequest();
+            } catch (e) {
+                try {
+                    req = new ActiveXObject('Msxml2.XMLHTTP');
+                } catch (e) {
+                    req = new ActiveXObject('Microsoft.XMLHTTP');
+                }
+            }
+            return req;
+        }
+
+        function asyncSearch() {
+            var req = getXHR();
+            req.onreadystatechange = function () {
+                var result = document.getElementById('result');
+                if (req.readyState == 4) {
+                    if (req.status == 200) {
+                        var doc = req.responseXML;
+                        var nodes = doc.getElementsByTagName('Result');
+                        if (nodes.length == 0) {
+                            result.innerHTML = '일치하는 사이트가 없었습니다.';
+                        } else {
+                            var ul = document.createElement('ul');
+                            for (var i = 0; i < nodes.length; i++) {
+                                var node = nodes.item(i);
+                                var li = document.createElement('li');
+                                var anchor = document.createElement('a');
+                                anchor.href = getNodeValue(node, 'Url');
+                                anchor.target = '_blank';
+                                var link = document.createTextNode(getNodeValue(node, 'Title'));
+                                anchor.appendChild(link);
+                                li.appendChild(anchor);
+                                ul.appendChild(li);
+                            }
+                        }
+                        result.replaceChild(ul, result.firstChild);
+                    } else {
+                        result.innerHTML = '서버 에러가 발생했습니다.';
+                    }
+                } else {
+                    result.innerHTML = '통신중...';
+                }
+            }
+            req.open('GET', 'yahooblog.php?keywd='
+                    + encodeURIComponent(document.fm.keywd.value), true);
+            req.send(null);
+        }
+        function getNodeValue(current, name) {
+            var node = current.getElementsByTagName(name).item(0);
+            return node.firstChild.nodeValue;
+        }
+        -->
+    </script>
+</head>
+<body>
+<form name="fm">
+    <label>키워드：
+        <input type="text" name="keywd" size="15"/></label>
+    <input type="button" value="검색" onclick="asyncSearch()"/>
+    <hr/>
+    <div id="result"></div>
+</form>
+</body>
+</html>

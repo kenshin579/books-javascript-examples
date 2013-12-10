@@ -1,0 +1,23 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>arguments객체</title>
+</head>
+<body>
+<pre>
+<script type="text/javascript">
+    <!--
+    function printf(format) {
+        for (var i = 1; i < arguments.length; i++) {
+            var pattern = new RegExp('\\{' + (i - 1) + '\\}', 'g');
+            format = format.replace(pattern, arguments[i]);
+        }
+        document.writeln(format);
+    }
+
+    printf('안녕하세요、{0}씨. 나는 {1}입니다.', '가케야', '야마다');
+    //-->
+</script>
+</pre>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>유틸리티</title>
+</head>
+<body>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var obj = {
+            name: '야마다 요시히로',
+            greet: function () {
+                window.alert('안녕하세요, ' + this.name + '씨！');
+            }
+        };
+        $('#btn').click(obj.greet);
+        //$('#btn').click($.proxy(obj.greet, obj));
+        //$('#btn').click($.proxy(obj,'greet'));
+    });
+</script>
+...중략...
+<input type="button" id="btn" value="표시"/></body>
+</html>
