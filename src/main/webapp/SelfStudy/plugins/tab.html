@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boostrap 101 Template</title>
+    <link href="../../libs/bootstrap-2.3.2/css/bootstrap.css" rel="stylesheet">
+    <style>
+        .box {
+            margin: 20px;
+            padding: 15px;
+            background: #eee;
+            height: 1000px;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../libs/bootstrap-2.3.2/css/bootstrap-responsive.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <ul class="nav nav-tabs" id="myTab">
+        <li class="active">
+            <a href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#profile">Profile</a>
+        </li>
+        <li>
+            <a href="#messages">Messages</a>
+        </li>
+        <li>
+            <a href="#settings">Settings</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="home">
+            Programming in Scala is probably one of the best programming books I've ever read. I like the writing style,
+            the brevity,
+            and the thorough explana- tions. The book seems to ans
+        </div>
+        <div class="tab-pane" id="profile">
+            g on concepts and examples described in earlier ones. The book takes care to explain the language constructs
+            in depth,
+            often providing examples of how the language diffe
+        </div>
+        <div class="tab-pane" id="messages">
+            his is a great introduction to functional programming for OO program- mers. Learning about FP was my main
+            goal, but I
+            also got acquainted with some nice Scala surprises like case classes and pattern matching. Scala is an
+            intriguing language and this book c
+        </div>
+        <div class="tab-pane" id="settings">
+            Programming in Scala is a pleasure to read. This is one of those well- written technical books that provide
+            deep and
+            comprehensive coverage of the subject in an exceptionally concise and elegant manner.
+            The book is organized in a very natural and logical way. It is equally well suited for a curious technologis
+        </div>
+    </div>
+</div>
+
+<script src="../../libs/jquery/jquery.js"></script>
+<script src="../../libs/bootstrap-2.3.2/js/bootstrap.js"></script>
+<script>
+    $(function () {
+        $('#myTab a:last').tab('show'); // 초기에 setting을 보여줌 by default
+    })
+    $('#myTab a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show'); //this (사용자가 클릭한 버튼)
+    })
+</script>
+</body>
+</html>

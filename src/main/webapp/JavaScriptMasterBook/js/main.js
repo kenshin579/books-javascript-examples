@@ -4,16 +4,16 @@ require([
     'BasicGrammer/Control',
     'DataStructure/Basic',
     'DataStructure/RegEx',
-    'DataStructure/Object'
-], function (Operator, DataType, Control,
-    Basic, RegEx, Object) {
-    var Operator = new Operator();
-    var DataType = new DataType();
-    var Control = new Control();
+    'DataStructure/Object',
+    'jQuery/jQuery'
+], function (Operator, DataType, Control, Basic, RegEx, Object, jQuery) {
+//    var Operator = new Operator();
+//    var DataType = new DataType();
+//    var Control = new Control();
+//
+//    var Basic = new Basic();
+//    var RegEx = new RegEx();
+//    var Object = new Object();
 
-    //
-    var Basic = new Basic();
-    var RegEx = new RegEx();
-    var Object = new Object();
-
+    var jQuery = new jQuery();
 });

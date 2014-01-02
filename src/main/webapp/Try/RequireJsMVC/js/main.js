@@ -1,4 +1,4 @@
-require(['Models/User', 'Controllers/ListController'], function(User, ListController){
+require(['Models/User', 'Controllers/ListController'], function (User, ListController) {
 
     var users = [new User('Barney'),
         new User('Cartman'),

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="../libs/jquery/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            loadList();
+
+            $('#add-new').click(function () {
+                addNewItem("", false);
+            });
+
+            $('#cleanup').click(cleanupList);
+        });
+
+        function addNewItem(text, done) {
+            var newItem = $('<div class="item"><input type="checkbox" class="done"><input type="text" class="text"></div>');
+            $('#list').prepend(newItem);
+
+            newItem.find('.done').get(0).checked = done;
+            newItem.find('.text').val(text);
+            newItem.find('.text').focus();
+            newItem.find('.text, .done').change(saveList);
+        }
+
+        function cleanupList() {
+            $('#list .item .done:checked').parent().remove();
+            $('#list .item .text').filter(function (index, inputBox) {
+                return inputBox.value == "";
+            }).parent().remove();
+
+            saveList();
+        }
+
+        function loadList() {
+            var listData = window.localStorage.getItem("listData");
+            listData = JSON.parse(listData);
+
+            console.log("loaded list data", listData);
+            if (!listData)
+                return;
+            for (var i = 0; i < listData.length; i++) {
+                var itemData = listData[i];
+                addNewItem(itemData.text, itemData.done);
+            }
+        }
+
+        function saveList() {
+            var listData = [];
+            $('#list .item').each(function (index, item) {
+                listData.push({
+                    text: $(item).find('.text').val(),
+                    done: $(item).find('.done').get(0).checked
+                });
+            });
+            console.log("saved list data", listData);
+            listData = JSON.stringify(listData);
+            window.localStorage.setItem("listData", listData);
+        }
+
+    </script>
+</head>
+<body>
+<h1>To-Do List</h1>
+
+<div id="toolbar">
+    <button id="add-new">Add new item</button>
+    <button id="cleanup">Cleanup list</button>
+</div>
+<div id="list"></div>
+</body>
+</html>
+

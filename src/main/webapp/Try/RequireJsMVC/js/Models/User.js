@@ -6,9 +6,9 @@
 //
 //    return User;
 //});
-define(function(){
+define(function () {
 
-    function User(name){
+    function User(name) {
         this.name = name || 'Default name';
     }
 

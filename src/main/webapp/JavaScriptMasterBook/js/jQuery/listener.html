@@ -1,0 +1,23 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>jQuery</title>
+    <script type="text/javascript" src="libs/jquery.js"></script>
+    <script type="text/javascript">
+        <!--
+        //페이지 로드 시의 처리를 정의함
+        // - $()함수는 문서 트리가 완성된타이임에 실행된다.(이미지 로드는 포함되지 않음)
+        $(function () {
+            $('#btn').click(
+                    function () {
+                        window.alert('버튼이 클릭되었습니다.');
+                    }
+            );
+        });
+        //-->
+    </script>
+</head>
+<body>
+<input type="button" id='btn' value="다이얼로그표시"/>
+</body>
+</html>

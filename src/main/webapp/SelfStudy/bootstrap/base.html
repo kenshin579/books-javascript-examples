@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boostrap 101 Template</title>
+    <link href="../../libs/bootstrap-2.3.2/css/bootstrap.css" rel="stylesheet">
+    <style>
+        .row div, .row-fluid div {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../libs/bootstrap-2.3.2/css/bootstrap-responsive.css" rel="stylesheet">
+</head>
+<body>
+<h1>Hello World1</h1>
+
+<p>Grid System</p>
+
+<div class="row">
+    <!--<div class="span4">Hello</div>-->
+    <div class="span4">I bought an early electronic version of the Programming in Scala book, by Odersky,</div>
+    <!--<div class="span4">반가워요.</div>-->
+    <div class="span4 offset1">I contributed more comments than I would have if the process would have been more
+        arduous
+    </div>
+</div>
+
+<p>Nesting Columns</p>
+
+<div class="row">
+    <div class="span4">Level 1: Programming in Scala 1</div>
+    <div class="span4 offset">I contributed more</div>
+    <div class="span8">Level 1: Nesting Columns
+        <div class="row">
+            <div class="span4">The book Programming in Scala outright oozes the</div>
+            <div class="span4">This leaves a very bad taste, as one can never be sure as to the understanding one has
+                achieved.
+            </div>
+        </div>
+    </div>
+</div>
+<p>Fluid Grid System (pixl instead of percent)</p>
+
+<div class="row-fluid">
+    <div class="span4">Level 1: Programming in Scala 1</div>
+    <div class="span8">This leaves a very bad taste, as one can never be sure as to the understanding one has
+        achieved.
+    </div>
+</div>
+</div>
+
+<p>Layouts</p>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span4">The book Programming in Scala outright oozes the</div>
+        <div class="span4">This leaves a very bad taste, as one can never be sure as to the understanding one has
+            achieved.
+        </div>
+    </div>
+</div>
+
+<p>Table</p>
+<table class="table">
+    <tr>
+        <td>hello1</td>
+        <td>hello2</td>
+        <td>hello3</td>
+    </tr>
+    <tr>
+        <td>data1</td>
+        <td>data2</td>
+        <td>data3</td>
+    </tr>
+</table>
+
+<form>
+    <legend>legend</legend>
+    <label>Label Name</label>
+    <input type="text" placeholder="Type something...">
+    <span class="help-block">Example block-level text here</span>
+    <label class="checkbox">
+        <input type="checkbox"> Check me out
+    </label>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<p>Grid Sizing</p>
+<img src="../../images/redo.png" class="img-circle">Test</img>
+
+<p>Icon examples</p>
+
+<div class="btn-toolbar">
+    <div class="btn-group">
+        <a class="btn btn-large" href="#"><i class="icon-align-left"></i></a>
+        <a class="btn" href="#"><i class="icon-align-center"></i></a>
+        <a class="btn" href="#"><i class="icon-align-right"></i></a>
+    </div>
+</div>
+
+<script src="../../libs/jquery/jquery.js"></script>
+<script src="../../libs/bootstrap-2.3.2/js/bootstrap.js"></script>
+</body>
+</html>
