@@ -1,0 +1,51 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>객체의 정의</title>
+</head>
+<body>
+<pre>
+<script type="text/javascript">
+    <!--
+
+    document.writeln("<h2>포토타입 정의 방법 2가지</h2>");
+    document.writeln("<p>1.닷 연산자를 사용했을 경우</p>"); /////////////////////
+    var Member = function (firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    };
+
+    Member.prototype.getName = function () {
+        return this.lastName + ' ' + this.firstName;
+    };
+
+    Member.prototype.toString = function () {
+        return this.lastName + this.firstName;
+    };
+    var mem = new Member('요시히로', '야마다');
+    document.writeln(mem.getName());
+    document.writeln(mem.toString());
+
+    document.writeln("<p>2.객체 리터럴로 정의하기</p>"); /////////////////////
+    var Member = function (firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    };
+
+    Member.prototype = {
+        getName: function () {
+            return this.lastName + ' ' + this.firstName;
+        },
+        toString: function () {
+            return this.lastName + this.firstName;
+        }
+    };
+    var mem = new Member('요시히로', '야마다');
+    document.writeln(mem.getName());
+    document.writeln(mem.toString());
+
+    //-->
+</script>
+</pre>
+</body>
+</html>
