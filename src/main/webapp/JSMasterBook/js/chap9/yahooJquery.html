@@ -1,0 +1,52 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Yahoo! 웹검색 Web서비스</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        <!--
+        $(
+                function () {
+                    $('#btnsend').click(
+                            function () {
+                                $('#result').html('통신중...');
+                                $.ajax({
+                                    url: 'yahooJson.php',
+                                    type: 'GET',
+                                    //cache: false,
+                                    dataType: 'json',
+                                    data: $('form').serializeArray(),
+                                    timeout: 5000,
+                                    success: function (data) {
+                                        $('#result').empty();
+                                        for (var i = 0; i < data.Result.length; i++) {
+                                            $('#result').append(
+                                                    $('<li></li>').append(
+                                                            $('<a></a>')
+                                                                    .attr('href', data.Result[i].ClickUrl)
+                                                                    .html(data.Result[i].Title)
+                                                    )
+                                            );
+                                        }
+                                    },
+                                    error: function () {
+                                        $('#result').html('서버 에러가 발생하였습니다.');
+                                    }
+                                });
+                            }
+                    );
+                }
+        );
+        //-->
+    </script>
+</head>
+<body>
+<form>
+    <label>키워드：
+        <input type="text" name="keywd" size="15"/></label>
+    <input type="button" value="검색" id="btnsend"/>
+    <hr/>
+    <ul id="result"></ul>
+</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>고계함수</title>
+</head>
+<body>
+<pre>
+<script type="text/javascript">
+    <!--
+    //고계 함수 (Higher-order function)
+    // - 함수를 인수, 반환값으로서 취급하는 함수
+    // - 장점: 큰 범위의 기능만을 정의해 두고 상세한 기능은 함수의 이용자가 자유롭게 결정할 수 있다
+
+    function arrayWalk(data, f) {
+        for (var key in data) {
+            f(key, data[key]);
+        }
+    }
+
+    function showElement(key, value) {
+        document.writeln(key + '：' + value);
+    }
+
+    var ary = [1, 2, 4, 8, 16];
+    arrayWalk(ary, showElement);
+    //-->
+</script>
+</pre>
+</body>
+</html>

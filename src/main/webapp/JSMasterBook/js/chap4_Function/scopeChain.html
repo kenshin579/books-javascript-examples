@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>스코프체인</title>
+</head>
+<body>
+<pre>
+<script type="text/javascript">
+    <!--
+
+    // 스코프 체인이란: 글로벌 객체, Call 객체를 생성 순서대로 연결한 리스트를 말함
+    // - Call 객체 -> 함수 호출이 있을 때마다 내부적으로 자동 생성되는 객체이다
+    var y = 'Global';
+    function outerFunc() {
+        var y = 'Local Outer';
+
+        function innerFunc() {
+            var z = 'Local Inner';
+            document.writeln(z);
+            document.writeln(y);
+            document.writeln(x);
+        }
+
+        innerFunc();
+    }
+
+    outerFunc();
+    //-->
+</script>
+</pre>
+</body>
+</html>

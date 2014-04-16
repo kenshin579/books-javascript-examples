@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <script type="text/javascript">
+        <!--
+        //        function HelloWorld() {
+        //            this.innerSay = function innerSay() {
+        //                console.log("Inner Hello World");
+        //            }
+        //        };
+        //
+        //        HelloWorld.prototype.say = function() {
+        //            console.log("HelloWorld");
+        //        };
+        //
+        //        var hello = new HelloWorld();
+        //        hello.say();
+        //        hello.innerSay();
+        //        console.dir(hello);
+
+        function Shape() {
+            this.x = 0;
+            this.y = 0;
+        }
+
+        // superclass method
+        Shape.prototype.move = function (x, y) {
+            this.x += x;
+            this.y += y;
+            console.info("Shape moved. (" + x + ", " + y + ")");
+        };
+
+        // Rectangle - subclass
+        function Rectangle() {
+            Shape.call(this); // call super constructor.
+        }
+
+        function create_object(obj) {
+            var F = function () {
+            };
+            F.prototype = obj;
+            return new F();
+        }
+
+        // subclass extends superclass
+        //1. 기본 new 연산자
+        //        Rectangle.prototype = new Shape();
+        Rectangle.prototype = Object.create(Shape.prototype);
+        //        Rectangle.prototype = create_object(Shape.prototype);
+
+        Rectangle.prototype.constructor = Rectangle;
+
+        var rect = new Rectangle();
+
+        rect instanceof Rectangle // true.
+        rect instanceof Shape // true.
+
+        rect.move(1, 1); // Outputs, "Shape moved."
+        //-->
+    </script>
+</head>
+<body>
+
+</body>
+</html>

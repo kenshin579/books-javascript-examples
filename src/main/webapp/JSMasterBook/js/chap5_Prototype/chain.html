@@ -1,0 +1,37 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>프로토 타입 체인</title>
+</head>
+<body>
+<pre>
+<script type="text/javascript">
+    <!--
+    //프로토타입 체인: 포로토타입에 인스턴스를 설정함으로써 인스턴스끼리 '암묵의 참조'하에 서로
+    //연결되어 계승(inherit) 관계를 갖는 것
+    // - 프로토타입 -> 어떤 객체의 원본이 되는 객체로서 JS에서는 이것을 이용하여 새로운 객체를 생성함
+    var Animal = function () {
+    }
+
+    Animal.prototype = {
+        walk: function () {
+            document.writeln('종종...');
+        }
+    };
+
+    var Dog = function () {
+    };
+    Dog.prototype = new Animal();
+
+    Dog.prototype.bark = function () {
+        document.writeln('멍멍！');
+    }
+
+    var d = new Dog();
+    d.walk(); //1.인스턴스의 자신의 멤버를 검색 없으면 2.그 프로토타임의 멈버를 검색
+    d.bark();
+    //-->
+</script>
+</pre>
+</body>
+</html>

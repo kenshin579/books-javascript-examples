@@ -1,0 +1,28 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>스코프</title>
+</head>
+<body>
+<pre>
+<script type="text/javascript">
+    <!--
+    var scope = 'Global Variable'; //var 명령을 사용하지 않고 선언된 변수는 모두 글로벌 변수로 본다.
+
+    function getValue() {
+        var scope = 'Local Variable'; //로컬 변수를 정의하려면 반드시 var 명령을 사용해야 한다.
+        return scope;
+    }
+
+    document.writeln(getValue());
+    document.writeln(scope);
+
+    function triangle(base, height) {
+        return base * height / 2;
+    }
+    document.writelen('삼각형의 면적: ' + triangle(5, 2)); // 5
+    //-->
+</script>
+</pre>
+</body>
+</html>

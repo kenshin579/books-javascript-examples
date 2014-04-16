@@ -1,0 +1,45 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>프로토타입 체인</title>
+</head>
+<body>
+<pre>
+<script type="text/javascript">
+    <!--
+    //계승 관계는 동적으로 변경 가능함
+    var Animal = function () {
+    }
+
+    Animal.prototype = {
+        walk: function () {
+            document.writeln('종종...');
+        }
+    };
+
+    var SuperAnimal = function () {
+    }
+    SuperAnimal.prototype = {
+        walk: function () {
+            document.writeln('다다다닷！');
+        }
+    };
+
+    var Dog = function () {
+    };
+    Dog.prototype = new Animal();
+    var d1 = new Dog();
+    d1.walk();
+
+    Dog.prototype = new SuperAnimal();
+    var d2 = new Dog();
+    d2.walk();
+
+    // 인스턴스가 생성된 시점에서 고정되어 그후의 변경에는 관여치 않고 보좀된
+    // - JavaScript가 동적인 성질을 가지고 있다고 이해하지만, 이 부분은 주의가 필요함
+    d1.walk(); //다다다닷 대신 종종!!
+    //-->
+</script>
+</pre>
+</body>
+</html>

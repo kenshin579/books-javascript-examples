@@ -1,0 +1,38 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>정적 프로퍼티／정적 메소드</title>
+</head>
+<body>
+<pre>
+<script type="text/javascript">
+    <!--
+    //정적 프로퍼티/정적 메서드 정의
+    // - 인스턴스를 생성하지 않아도 객체로부터 직접 호출할 수 있는 프로퍼티/메서드
+    // - 정적 프로퍼티/메서드를 정의하는 경우 프로포타입 객체에는 등록할 수 없음
+    //   다음과 같이 직접 추가해야 함
+    // 언제 사용?
+    // 1.정적 프로퍼티는 기본적으로 읽기 전용
+    // 2.정적 메서드안에서는 this 키워드를 사용할 수 없
+    var Area = function () {
+    };
+
+    Area.version = '1.0'; //정적 프로퍼티의 정의
+
+    //정적 메서드의 정의
+    Area.triangle = function (base, height) {
+        return base * height / 2;
+    }
+    Area.diamond = function (width, height) {
+        return width * height / 2
+    }
+
+    document.writeln('Area클래스의 버전：' + Area.version);
+    document.writeln('삼각형의 면적：' + Area.triangle(5, 3));
+    var a = new Area();
+    document.writeln('마름모의 면적：' + a.diamond(10, 2));
+    //-->
+</script>
+</pre>
+</body>
+</html>
